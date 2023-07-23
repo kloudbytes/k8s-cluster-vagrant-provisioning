@@ -22,7 +22,7 @@ Vagrant.configure(2) do |config|
     node.vm.box               = VAGRANT_BOX
     node.vm.box_check_update  = false
     node.vm.box_version       = VAGRANT_BOX_VERSION
-    node.vm.hostname          = "k8s-master.example.com"
+    node.vm.hostname          = "k8s-master.kloudbytes.com"
 
     node.vm.network "private_network", ip: "172.16.0.100"
   
@@ -51,7 +51,7 @@ Vagrant.configure(2) do |config|
       node.vm.box               = VAGRANT_BOX
       node.vm.box_check_update  = false
       node.vm.box_version       = VAGRANT_BOX_VERSION
-      node.vm.hostname          = "k8s-worker#{i}.example.com"
+      node.vm.hostname          = "k8s-worker#{i}.kloudbytes.com"
 
       node.vm.network "private_network", ip: "172.16.0.10#{i}"
 
