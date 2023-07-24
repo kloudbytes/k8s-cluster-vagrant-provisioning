@@ -18,3 +18,10 @@ sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
 export KUBECONFIG=$HOME/.kube/config
 echo 'export KUBECONFIG=$HOME/.kube/config' >> $HOME/.bashrc
+
+echo "[TASK 6] Kubectl autocomplete and k alias ]"
+
+sudo source <(kubectl completion bash)
+echo "source <(kubectl completion bash)" >> ~/.bashrc
+alias k=kubectl
+complete -o default -F __start_kubectl k
