@@ -69,4 +69,5 @@ cat >>/etc/hosts<<EOF
 172.16.0.100   k8s-master.kloudbytes.com     master   m1
 172.16.0.101   k8s-worker1.kloudbytes.com    worker1  w1
 172.16.0.102   k8s-worker2.kloudbytes.com    worker2  w2
+172.16.0.103   k8s-worker3.kloudbytes.com    worker3  w3
 EOF
