@@ -11,7 +11,6 @@ MEMORY_MASTER_NODE  = 2048
 MEMORY_WORKER_NODE  = 1024
 WORKER_NODES_COUNT  = 2
 
-
 Vagrant.configure(2) do |config|
 
   config.vm.provision "shell", path: "kloud-bytes-bootstrap.sh"
