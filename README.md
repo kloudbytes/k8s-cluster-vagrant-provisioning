@@ -1,6 +1,35 @@
 # k8s-cluster-vagrant-provisioning
 
+## Prerequisites:
 
+1. isntall virtualbox - https://www.virtualbox.org/wiki/Downloads
+2. instal vagrant - https://www.vagrantup.com/downloads
+
+## Step to configure k8s cluster using vagrant
+
+1. Open Git Bash. 
+2. Change the current working directory to the location where you want the cloned directory.
+3. `git clone https://github.com/kloudbytes/k8s-cluster-vagrant-provisioning.git`
+4. `cd k8s-cluster-vagrant-provisioning`
+5.  Use `vagrant version` command for verify vagrant working perfectly or not. If not working, kindly set environment variable for the vagrant.
+6.  `vagrant up`
+7.  Login into your master node, type command `kubectl get nodes`
+
+## Vagrant commands
+
+There are several Vagrant commands which you can use to control your box.
+
+Some of the important ones are:
+
+1.  `vagrant up` Bring a box online. # all the box.
+2.  `vagrant status` List the vagrant box status
+3.  `vagrant up <nodename>` # Only bring which you mentioned box.
+4.  `vagrant status` Show current box status.
+5.  `vagrant suspend` Pause the current box.
+6.  `vagrant resume` Resume the current box.
+7.  `vagrant halt` Shutdown the current box.
+8.  `vagrant destroy` Destroy the current box. By running this command, you will lose any data stored on the box.
+9.  `vagrant snapshot` Take a snapshot of the current box.
 
 # Introduction:
 
