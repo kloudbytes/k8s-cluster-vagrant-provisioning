@@ -49,7 +49,7 @@ curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add - >/
 apt-add-repository "deb http://apt.kubernetes.io/ kubernetes-xenial main" >/dev/null 2>&1
 
 echo "[TASK 7] Install Kubernetes components (kubeadm, kubelet and kubectl)"
-apt install -qq -y kubeadm=1.27.0-00 kubelet=1.27.0-00 kubectl=1.27.0-00 >/dev/null 2>&1
+apt install -qq -y kubeadm=1.28.0-00 kubelet=1.28.0-00 kubectl=1.28.0-00 >/dev/null 2>&1
 
 echo "[TASK 7.1] Install net-tools components (ifconfig )"
 apt install -qq -y net-tools >/dev/null 2>&1
