@@ -15,7 +15,7 @@
 6.  `vagrant up`
 7.  Login into your master node, type command `kubectl get nodes`
 
-![image](images/Vagrant-Virtualbox-k8s.jpg)
+![images/Vagrant-Virtualbox-k8s.jpg](https://github.com/kloudbytes/certified-kubernetes-administator/blob/main/images/Vagrant-Virtualbox-k8s.jpg))
 
 ## Vagrant commands
 
