@@ -15,6 +15,8 @@
 6.  `vagrant up`
 7.  Login into your master node, type command `kubectl get nodes`
 
+![image](images/Vagrant-Virtualbox-k8s.jpg)
+
 ## Vagrant commands
 
 There are several Vagrant commands which you can use to control your box.
